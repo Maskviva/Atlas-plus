@@ -1,0 +1,29 @@
+{
+  "__comment": "Atlas-plus EXAMPLE config. You do NOT need to create this — the plugin writes plugins/Atlas-plus/config.json (with these defaults) on first run; edit that file. This file is a reference of every field and its default. Unknown keys (like this one) are ignored. See README.md for full explanations. The 'pinned_areas' entry below is illustrative; the real default is an empty list [].",
+  "http_bind": "0.0.0.0",
+  "http_port": 8899,
+  "http_workers": 3,
+  "live_poll_ms": 1000,
+  "out_dir": "plugins/Atlas-plus/map",
+  "world_name": "Atlas-plus (live)",
+  "dimensions": [0],
+  "render_radius_chunks": 6,
+  "pinned_areas": [
+    { "dim": 0, "x": 0, "z": 0, "radius_chunks": 6 }
+  ],
+  "bootstrap": true,
+  "world_dir": null,
+  "bootstrap_radius_chunks": null,
+  "bootstrap_throttle_ms": 10,
+  "update_mode": "nearby+events",
+  "chunks_per_cycle": 6,
+  "cycle_interval_ms": 250,
+  "slab_height": 16,
+  "scan_top": null,
+  "scan_bottom": null,
+  "use_height_cache": true,
+  "rebuild_headroom": 16,
+  "full_rescan_every": 16,
+  "flush_interval_ms": 1000,
+  "max_regions": 48
+}

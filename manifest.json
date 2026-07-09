@@ -1,0 +1,11 @@
+{
+    "name": "Atlas-plus",
+    "entry": "atlas_plus.dll",
+    "type": "rust",
+    "platform": "server",
+    "version": "1.0.0",
+    "description": "Live in-memory top-down world map. Reads blocks straight from the running server (never waits for a disk save) and serves an auto-refreshing browser map.",
+    "dependencies": [
+        { "name": "levilamina-rust-loader" }
+    ]
+}

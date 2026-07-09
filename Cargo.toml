@@ -1,0 +1,28 @@
+[package]
+name = "atlas-plus"
+version = "1.0.0"
+edition = "2021"
+publish = false
+license = "Apache-2.0"
+description = "Atlas-plus — live, in-memory top-down map renderer for Minecraft Bedrock Dedicated Server (LeviLamina, Rust)."
+repository = "https://github.com/Maskviva/levilamina-rust-loader"
+readme = "README.md"
+keywords = ["levilamina", "minecraft", "bedrock", "mod", "bds"]
+
+[lib]
+name = "atlas_plus"
+crate-type = ["cdylib"]
+
+[dependencies]
+flate2 = "1.0"
+levilamina = { version = "1.0.0", git = "https://github.com/Maskviva/levilamina-rust-loader" }
+
+image = { version = "0.24", default-features = false, features = ["png"] }
+
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+
+[profile.release]
+lto = true
+opt-level = 3
+codegen-units = 1
